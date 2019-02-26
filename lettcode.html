@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+	var arr=[1,2,3,4,5,6,7,8,9];
+	var result=[];
+	var target=12;
+	for(var i=0;i<arr.length;i++){
+	    var num1=arr[i];
+	    for(var j=i+1;j<arr.length;j++){
+	        var num2=arr[j];
+	        var sum=num1+num2;
+	        if(sum===target){
+						result.push(i.toString()+j.toString());
+
+					}
+			}
+	}
+	console.log(result);
+</script>
+</body>
+</html>

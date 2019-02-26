@@ -1,0 +1,25 @@
+//less文件
+
+/*样式通过ID去限定*/
+/*尽可能选择直接子代选择器*/
+
+
+/*
+*bootstrap扩展
+*/
+
+
+@mainColor: #e92322;
+
+body{
+  background-color: @mainColor;
+}
+.container{
+  width: 1000px;
+  .row{
+    height: 200px;
+    div{
+      border: 1px solid @mainColor;
+    }
+  }
+}
